@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DevHangout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: left;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+.course{
+display: flex;
+justify-content: space-around;
+
+
+
+}
+.content{
+    background-color: lightgreen;
+    box-shadow: 10px 10px black;
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+}
+.schedule{
+    background-color: lightgreen;
+    box-shadow: 10px 10px black;
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+}
+.fee{
+    background-color: lightgreen;
+    box-shadow: 10px 10px black;
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Developers Hangout</h2>
+</header>
+
+<section>
+  <nav>
+      <h2>Courses</h2>
+    <ul>
+      <li>python</li>
+      <li>Compatative Pragramming with CPP</li>
+      <li>Django</li>
+      <li>Java</li>
+      <li>Java Script</li>
+      <li>Laravel</li>
+
+    </ul>
+  </nav>
+  
+  <article>
+        <h1 style="text-align: center;">python</h1>
+
+        <div class="course">
+            
+            <div class="content">
+                <h1>Contents</h1>
+                    <ul>
+                        <li>Variables</li>
+                        <li>Data Structures</li>
+                        <li>bla</li>
+                        <li>bla</li>
+                        <li>bla</li>
+                        <li>bla</li>
+                    </ul>
+            </div>
+            <div class="schedule">
+                <h1>schedule</h1>
+                    <p><b><i>Every Saterday and Sunday</i></b></p>
+                    <p><b><i>10 AM to 12 PM</i></b></p>
+            </div>
+            <div class="fee">
+                <h1>Fee Structure</h1>
+                    <p><b>FULL PAYMENT IN <I>ADVANCED</I></b></p>
+            </div>
+        </div>
+  </article>
+</section>
+
+<footer>
+  <h5>Contact Us</h5>
+  <ul>
+    <li>Hemant Durdhawale</li>
+    <li>Gopal Panigrahi</li>
+    <li>Akshay Nale</li>
+  </ul>
+</footer>
+
+</body>
+</html>
